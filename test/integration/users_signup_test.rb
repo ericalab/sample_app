@@ -24,6 +24,5 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
     #test redirectする前にテストしたければここに書く
     follow_redirect!
     assert_template 'users/show'
-    assert_not flash.FILL_IN
   end
 end
